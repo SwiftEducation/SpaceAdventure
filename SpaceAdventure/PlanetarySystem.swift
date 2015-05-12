@@ -10,7 +10,7 @@ import Foundation
 class PlanetarySystem {
 
     let name: String
-    var planets: [Planet]
+    let planets: [Planet]
     var randomPlanet: Planet? {
         if planets.isEmpty {
             return nil
