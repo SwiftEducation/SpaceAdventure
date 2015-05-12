@@ -11,6 +11,11 @@ class SpaceAdventure {
     
     let planetarySystem = PlanetarySystem(name: "Solar System", planets: [Planet]())
     
+    init() {
+        let mercury = Planet(name: "Mercury", description: "A very hot planet, closest to the sun.")
+        planetarySystem.planets.append(mercury)
+    }
+    
     func start() {
         displayIntroduction()
         greetAdventurer()

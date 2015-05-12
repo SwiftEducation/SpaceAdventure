@@ -10,7 +10,7 @@ import Foundation
 class PlanetarySystem {
 
     let name: String
-    let planets: [Planet]
+    var planets: [Planet]
     
     init(name: String, planets: [Planet]) {
         self.name = name
