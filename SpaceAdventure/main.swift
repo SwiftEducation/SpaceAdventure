@@ -7,4 +7,9 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
 import Foundation
 
-println("Hello, World!")
+let numberOfPlanets = 8
+let diameterOfEarth = 24859.82 // In miles, from pole to pole.
+
+println("Welcome to our solar system!")
+println("There are \(numberOfPlanets) planets to explore.")
+println("Your are currently on Earth, which has a circumference of \(diameterOfEarth) miles.")
