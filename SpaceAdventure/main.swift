@@ -20,12 +20,17 @@ println("Nice to meet you, \(name). My name is Eliza, I'm an old friend of Siri.
 
 println("Let's go on an adventure!")
 println("Shall I randomly choose a planet for you to visit? (Y or N)")
-let decision = getln()
 
-if decision == "Y" {
-    println("Ok! Traveling to...")
-    // TOOD: travel to random planet
-} else {
-    println("Ok, name the planet you would like to visit...")
-    // TODO: let the user select a planet to visit
+var decision = "" // Start with empty String
+while !(decision == "Y" || decision == "N") {
+    decision = getln()
+    if decision == "Y" {
+        println("Ok! Traveling to...")
+        // TOOD: travel to random planet
+    } else if decision == "N" {
+        println("Ok, name the planet you would like to visit...")
+        // TODO: let the user select a planet to visit
+    } else {
+        println("Sorry, I didn't get that.")
+    }
 }
