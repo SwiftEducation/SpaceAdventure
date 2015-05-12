@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F95C91441AE5A1B200A3156B /* SpaceAdventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C91431AE5A1B200A3156B /* SpaceAdventure.swift */; };
 		F95C91461AE6E76200A3156B /* PlanetarySystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C91451AE6E76200A3156B /* PlanetarySystem.swift */; };
+		F95C91481AE8456700A3156B /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C91471AE8456700A3156B /* Planet.swift */; };
 		F9A13B8E1ADDD6990057A316 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A13B8D1ADDD6990057A316 /* main.swift */; };
 		F9A13B951ADDD6F70057A316 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A13B941ADDD6F70057A316 /* HelperFunctions.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		F95C91431AE5A1B200A3156B /* SpaceAdventure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceAdventure.swift; sourceTree = "<group>"; };
 		F95C91451AE6E76200A3156B /* PlanetarySystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetarySystem.swift; sourceTree = "<group>"; };
+		F95C91471AE8456700A3156B /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		F9A13B8A1ADDD6990057A316 /* SpaceAdventure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpaceAdventure; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A13B8D1ADDD6990057A316 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F9A13B941ADDD6F70057A316 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				F9A13B8D1ADDD6990057A316 /* main.swift */,
 				F95C91431AE5A1B200A3156B /* SpaceAdventure.swift */,
 				F95C91451AE6E76200A3156B /* PlanetarySystem.swift */,
+				F95C91471AE8456700A3156B /* Planet.swift */,
 				F9A13B941ADDD6F70057A316 /* HelperFunctions.swift */,
 			);
 			path = SpaceAdventure;
@@ -131,6 +134,7 @@
 				F95C91461AE6E76200A3156B /* PlanetarySystem.swift in Sources */,
 				F9A13B951ADDD6F70057A316 /* HelperFunctions.swift in Sources */,
 				F95C91441AE5A1B200A3156B /* SpaceAdventure.swift in Sources */,
+				F95C91481AE8456700A3156B /* Planet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

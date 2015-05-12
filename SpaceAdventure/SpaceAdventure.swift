@@ -9,7 +9,7 @@ import Foundation
 
 class SpaceAdventure {
     
-    let planetarySystem = PlanetarySystem(name: "Solar System")
+    let planetarySystem = PlanetarySystem(name: "Solar System", planets: [Planet]())
     
     func start() {
         displayIntroduction()
@@ -19,9 +19,8 @@ class SpaceAdventure {
     }
  
     private func displayIntroduction() {
-        let numberOfPlanets = 8
         println("Welcome to the \(planetarySystem.name)!")
-        println("There are \(numberOfPlanets) planets to explore.")
+        println("There are \(planetarySystem.planets.count) planets to explore.")
     }
     
     private func responseToPrompt(prompt: String) -> String {
