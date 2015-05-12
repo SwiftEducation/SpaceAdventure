@@ -22,14 +22,14 @@ class SpaceAdventure {
         let uranus = Planet(name: "Uranus", description: "Strangely, this planet rotates around on its side.")
         let neptune = Planet(name: "Neptune", description: "A very cold planet, furthest from the sun.")
         
-        planetarySystem.planets.append(mercury)
-        planetarySystem.planets.append(venus)
-        planetarySystem.planets.append(earth)
-        planetarySystem.planets.append(mars)
-        planetarySystem.planets.append(jupiter)
-        planetarySystem.planets.append(saturn)
-        planetarySystem.planets.append(uranus)
-        planetarySystem.planets.append(neptune)
+//        planetarySystem.planets.append(mercury)
+//        planetarySystem.planets.append(venus)
+//        planetarySystem.planets.append(earth)
+//        planetarySystem.planets.append(mars)
+//        planetarySystem.planets.append(jupiter)
+//        planetarySystem.planets.append(saturn)
+//        planetarySystem.planets.append(uranus)
+//        planetarySystem.planets.append(neptune)
     }
     
     func start() {
@@ -59,8 +59,9 @@ class SpaceAdventure {
         while !(decision == "Y" || decision == "N") {
             decision = responseToPrompt("Shall I randomly choose a planet for you to visit? (Y or N)")
             if decision == "Y" {
-                println("Ok! Traveling to...")
-                // TOOD: travel to random planet
+                let upperBound = planetarySystem.planets.count
+                let index = Int(arc4random_uniform(UInt32(upperBound)))
+                visit(planetarySystem.planets[index].name)
             } else if decision == "N" {
                 let planetName = responseToPrompt("Ok, name the planet you would like to visit.")
                 visit(planetName)

@@ -16,5 +16,5 @@ class PlanetarySystem {
         self.name = name
         self.planets = planets
     }
-
+    
 }
