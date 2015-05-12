@@ -7,6 +7,9 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
 import Foundation
 
+let adventure = SpaceAdventure()
+adventure.start()
+
 let numberOfPlanets = 8
 let diameterOfEarth = 24859.82 // In miles, from pole to pole.
 
