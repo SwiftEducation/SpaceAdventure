@@ -10,23 +10,34 @@ import Foundation
 class SpaceAdventure {
     
     func start() {
+        displayIntroduction()
+        greetAdventurer()
+        println("Let's go on an adventure!")
+        determineDestination()
+    }
+ 
+    private func displayIntroduction() {
         let numberOfPlanets = 8
         let diameterOfEarth = 24859.82 // In miles, from pole to pole.
-        
         println("Welcome to our solar system!")
         println("There are \(numberOfPlanets) planets to explore.")
         println("Your are currently on Earth, which has a circumference of \(diameterOfEarth) miles.")
-        
-        println("What is your name?")
-        let name = getln()
+    }
+    
+    private func responseToPrompt(prompt: String) -> String {
+        println(prompt)
+        return getln()
+    }
+
+    private func greetAdventurer() {
+        let name = responseToPrompt("What is your name?")
         println("Nice to meet you, \(name). My name is Eliza, I'm an old friend of Siri.")
-        
-        println("Let's go on an adventure!")
-        println("Shall I randomly choose a planet for you to visit? (Y or N)")
-        
+    }
+    
+    private func determineDestination() {
         var decision = "" // Start with empty String
         while !(decision == "Y" || decision == "N") {
-            decision = getln()
+            decision = responseToPrompt("Shall I randomly choose a planet for you to visit? (Y or N)")
             if decision == "Y" {
                 println("Ok! Traveling to...")
                 // TOOD: travel to random planet
@@ -38,5 +49,5 @@ class SpaceAdventure {
             }
         }
     }
-    
+
 }
