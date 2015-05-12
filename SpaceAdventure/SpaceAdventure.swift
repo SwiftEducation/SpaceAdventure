@@ -62,10 +62,19 @@ class SpaceAdventure {
                 println("Ok! Traveling to...")
                 // TOOD: travel to random planet
             } else if decision == "N" {
-                println("Ok, name the planet you would like to visit...")
-                // TODO: let the user select a planet to visit
+                let planetName = responseToPrompt("Ok, name the planet you would like to visit.")
+                visit(planetName)
             } else {
                 println("Sorry, I didn't get that.")
+            }
+        }
+    }
+    
+    private func visit(planetName: String) {
+        println("Traveling to \(planetName)...")
+        for planet in planetarySystem.planets {
+            if planetName == planet.name {
+                println("Arrived at \(planet.name). \(planet.description)")
             }
         }
     }
