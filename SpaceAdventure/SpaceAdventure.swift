@@ -9,6 +9,8 @@ import Foundation
 
 class SpaceAdventure {
     
+    let planetarySystem = PlanetarySystem(name: "Solar System")
+    
     func start() {
         displayIntroduction()
         greetAdventurer()
@@ -18,10 +20,8 @@ class SpaceAdventure {
  
     private func displayIntroduction() {
         let numberOfPlanets = 8
-        let diameterOfEarth = 24859.82 // In miles, from pole to pole.
-        println("Welcome to our solar system!")
+        println("Welcome to the \(planetarySystem.name)!")
         println("There are \(numberOfPlanets) planets to explore.")
-        println("Your are currently on Earth, which has a circumference of \(diameterOfEarth) miles.")
     }
     
     private func responseToPrompt(prompt: String) -> String {
