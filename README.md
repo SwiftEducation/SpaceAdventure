@@ -1,6 +1,12 @@
 # SpaceAdventure
 
+### Level 1, Fifteen Lessons
 
+Teach the fundamentals of object-oriented programming with Swift. Guide students in discovering Swift syntax, conventions, modeling with classes, initialization, optionals, data structures, and closures.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 # License
 
