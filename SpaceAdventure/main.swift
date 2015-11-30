@@ -7,4 +7,4 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
 import Foundation
 
-println("Hello, World!")
+print("Hello, World!")
