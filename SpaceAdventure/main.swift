@@ -19,7 +19,7 @@ let planetData = [
     "Neptune": "A very cold planet, furthest from the sun."
 ]
 
-let planets = map(planetData) { name, description in Planet(name: name, description: description) }
+let planets = planetData.map { name, description in Planet(name: name, description: description) }
 
 let solarSystem = PlanetarySystem(name: systemName, planets: planets)
 let adventure = SpaceAdventure(planetarySystem: solarSystem)
