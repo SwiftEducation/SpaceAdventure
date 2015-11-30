@@ -100,7 +100,8 @@
 		F9A13B821ADDD6990057A316 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Your School";
 				TargetAttributes = {
 					F9A13B891ADDD6990057A316 = {
@@ -161,6 +162,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
