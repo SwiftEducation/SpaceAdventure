@@ -10,22 +10,22 @@ import Foundation
 let numberOfPlanets = 8
 let diameterOfEarth = 24859.82 // In miles, from pole to pole.
 
-println("Welcome to our solar system!")
-println("There are \(numberOfPlanets) planets to explore.")
-println("Your are currently on Earth, which has a circumference of \(diameterOfEarth) miles.")
+print("Welcome to our solar system!")
+print("There are \(numberOfPlanets) planets to explore.")
+print("Your are currently on Earth, which has a circumference of \(diameterOfEarth) miles.")
 
-println("What is your name?")
+print("What is your name?")
 let name = getln()
-println("Nice to meet you, \(name). My name is Eliza, I'm an old friend of Siri.")
+print("Nice to meet you, \(name). My name is Eliza, I'm an old friend of Siri.")
 
-println("Let's go on an adventure!")
-println("Shall I randomly choose a planet for you to visit? (Y or N)")
+print("Let's go on an adventure!")
+print("Shall I randomly choose a planet for you to visit? (Y or N)")
 let decision = getln()
 
 if decision == "Y" {
-    println("Ok! Traveling to...")
+    print("Ok! Traveling to...")
     // TOOD: travel to random planet
 } else {
-    println("Ok, name the planet you would like to visit...")
+    print("Ok, name the planet you would like to visit...")
     // TODO: let the user select a planet to visit
 }
