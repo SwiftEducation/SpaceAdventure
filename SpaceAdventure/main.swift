@@ -10,6 +10,6 @@ import Foundation
 let numberOfPlanets = 8
 let diameterOfEarth = 24859.82 // In miles, from pole to pole.
 
-println("Welcome to our solar system!")
-println("There are \(numberOfPlanets) planets to explore.")
-println("Your are currently on Earth, which has a circumference of \(diameterOfEarth) miles.")
+print("Welcome to our solar system!")
+print("There are \(numberOfPlanets) planets to explore.")
+print("Your are currently on Earth, which has a circumference of \(diameterOfEarth) miles.")
