@@ -1,8 +1,8 @@
 # SpaceAdventure
 
-### Level 1, Fifteen Lessons
+## Updated for Swift 3 and Xcode 8
 
-Teach the fundamentals of object-oriented programming with Swift. Guide students in discovering Swift syntax, conventions, modeling with classes, initialization, optionals, data structures, and closures.
+Changed a few things to bring it up to date with Swift 3.  Mostly changing getln function for readLine() as that is currently an open issue.
 
 ## Contributing
 

@@ -5,7 +5,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
 */
 
-import Foundation
+
 
 class SpaceAdventure {
     
@@ -15,6 +15,8 @@ class SpaceAdventure {
         self.planetarySystem = planetarySystem
     }
     
+    
+    //our start function
     func start() {
         displayIntroduction()
         greetAdventurer()
@@ -24,21 +26,30 @@ class SpaceAdventure {
         }
     }
  
+    //Displays introduction 
+    //tells how many planets there are and diamiter of earth
     private func displayIntroduction() {
-        print("Welcome to the \(planetarySystem.name)!")
+        let diameterOfEarth = 24859.82 //In miles, from pole to pole
+        print("Welcome to our \(planetarySystem.name)!")
         print("There are \(planetarySystem.planets.count) planets to explore.")
-    }
-    
-    private func responseToPrompt(prompt: String) -> String {
-        print(prompt)
-        return getln()
+        print("You are currently on Earth, which has a circumference of \(diameterOfEarth) miles.")
     }
 
+    //Offers a prompt and stores user's answer
+    //prompt text is declaired when the function is called
+    private func responseToPrompt(_ prompt: String) -> String {
+        print(prompt)
+        let decision = readLine()!
+        return decision
+    }
+
+    //Greeting with personalized name text (here is wehre can change the text of the prompt)
     private func greetAdventurer() {
         let name = responseToPrompt("What is your name?")
         print("Nice to meet you, \(name). My name is Eliza, I'm an old friend of Siri.")
     }
     
+    //Destination is chosen by the user
     private func determineDestination() {
         var decision = "" // Start with empty String
         while !(decision == "Y" || decision == "N") {
@@ -57,8 +68,8 @@ class SpaceAdventure {
             }
         }
     }
-    
-    private func visit(planetName: String) {
+    //Travel to destination
+    private func visit(_ planetName: String) {
         print("Traveling to \(planetName)...")
         for planet in planetarySystem.planets {
             if planetName == planet.name {

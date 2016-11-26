@@ -15,6 +15,7 @@ class PlanetarySystem {
         if planets.isEmpty {
             return nil
         } else {
+            
             let index = Int(arc4random_uniform(UInt32(planets.count)))
             return planets[index]
         }
