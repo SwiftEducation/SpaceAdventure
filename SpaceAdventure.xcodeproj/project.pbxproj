@@ -11,7 +11,6 @@
 		F95C91461AE6E76200A3156B /* PlanetarySystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C91451AE6E76200A3156B /* PlanetarySystem.swift */; };
 		F95C91481AE8456700A3156B /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C91471AE8456700A3156B /* Planet.swift */; };
 		F9A13B8E1ADDD6990057A316 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A13B8D1ADDD6990057A316 /* main.swift */; };
-		F9A13B951ADDD6F70057A316 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A13B941ADDD6F70057A316 /* HelperFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +31,6 @@
 		F95C91471AE8456700A3156B /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		F9A13B8A1ADDD6990057A316 /* SpaceAdventure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpaceAdventure; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A13B8D1ADDD6990057A316 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		F9A13B941ADDD6F70057A316 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +67,6 @@
 				F95C91431AE5A1B200A3156B /* SpaceAdventure.swift */,
 				F95C91451AE6E76200A3156B /* PlanetarySystem.swift */,
 				F95C91471AE8456700A3156B /* Planet.swift */,
-				F9A13B941ADDD6F70057A316 /* HelperFunctions.swift */,
 			);
 			path = SpaceAdventure;
 			sourceTree = "<group>";
@@ -102,11 +99,12 @@
 			attributes = {
 				LastSwiftMigration = 0710;
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Your School";
 				TargetAttributes = {
 					F9A13B891ADDD6990057A316 = {
 						CreatedOnToolsVersion = 6.3;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -134,7 +132,6 @@
 			files = (
 				F9A13B8E1ADDD6990057A316 /* main.swift in Sources */,
 				F95C91461AE6E76200A3156B /* PlanetarySystem.swift in Sources */,
-				F9A13B951ADDD6F70057A316 /* HelperFunctions.swift in Sources */,
 				F95C91441AE5A1B200A3156B /* SpaceAdventure.swift in Sources */,
 				F95C91481AE8456700A3156B /* Planet.swift in Sources */,
 			);
@@ -156,8 +153,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -200,8 +199,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -219,6 +220,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -226,6 +228,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -233,6 +236,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
