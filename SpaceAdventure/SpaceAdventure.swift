@@ -16,7 +16,7 @@ class SpaceAdventure {
         determineDestination()
     }
  
-    private func displayIntroduction() {
+    fileprivate func displayIntroduction() {
         let numberOfPlanets = 8
         let diameterOfEarth = 24859.82 // In miles, from pole to pole.
         print("Welcome to our solar system!")
@@ -24,17 +24,17 @@ class SpaceAdventure {
         print("Your are currently on Earth, which has a circumference of \(diameterOfEarth) miles.")
     }
     
-    private func responseToPrompt(prompt: String) -> String {
+    fileprivate func responseToPrompt(_ prompt: String) -> String {
         print(prompt)
         return getln()
     }
 
-    private func greetAdventurer() {
+    fileprivate func greetAdventurer() {
         let name = responseToPrompt("What is your name?")
         print("Nice to meet you, \(name). My name is Eliza, I'm an old friend of Siri.")
     }
     
-    private func determineDestination() {
+    fileprivate func determineDestination() {
         var decision = "" // Start with empty String
         while !(decision == "Y" || decision == "N") {
             decision = responseToPrompt("Shall I randomly choose a planet for you to visit? (Y or N)")
