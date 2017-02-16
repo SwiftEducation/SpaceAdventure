@@ -18,22 +18,22 @@ class SpaceAdventure {
         determineDestination()
     }
  
-    private func displayIntroduction() {
+    fileprivate func displayIntroduction() {
         print("Welcome to the \(planetarySystem.name)!")
         print("There are \(planetarySystem.planets.count) planets to explore.")
     }
     
-    private func responseToPrompt(prompt: String) -> String {
+    fileprivate func responseToPrompt(_ prompt: String) -> String {
         print(prompt)
         return getln()
     }
 
-    private func greetAdventurer() {
+    fileprivate func greetAdventurer() {
         let name = responseToPrompt("What is your name?")
         print("Nice to meet you, \(name). My name is Eliza, I'm an old friend of Siri.")
     }
     
-    private func determineDestination() {
+    fileprivate func determineDestination() {
         var decision = "" // Start with empty String
         while !(decision == "Y" || decision == "N") {
             decision = responseToPrompt("Shall I randomly choose a planet for you to visit? (Y or N)")
